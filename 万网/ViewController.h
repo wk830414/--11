@@ -7,7 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
-
-@interface ViewController : UIViewController
-
+#import "iCarousel.h"
+@interface ViewController : UIViewController<iCarouselDataSource,iCarouselDelegate,UIActionSheetDelegate,UIScrollViewDelegate>
+@property (nonatomic, retain)  iCarousel *carousel;
+@property (nonatomic,retain) UIScrollView *scroll;
+@property (nonatomic,assign) BOOL wrap;
+@property (nonatomic,retain) UIPageControl *page;
+@property (nonatomic,assign)int indexImage;//第几个原图
 @end

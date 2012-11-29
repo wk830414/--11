@@ -29,6 +29,10 @@
     self.viewController = [[[ViewController alloc] initWithNibName:@"ViewController" bundle:nil] autorelease];
     self.window.rootViewController = self.viewController;
     [self.window makeKeyAndVisible];
+    
+    
+    
+    NSLog(@"%d",1000/5+1000/25+1000/125+1000/625);
     return YES;
 }
 
